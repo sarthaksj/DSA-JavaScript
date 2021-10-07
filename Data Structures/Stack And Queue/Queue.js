@@ -1,4 +1,4 @@
-// Stack-(FIFO) Implementation Using Linked List
+// Queue - (FIFO) Implementation Using Linked List
 
 class Node {
     constructor(value) {
@@ -42,7 +42,7 @@ class Queue {
 
 
 
-// Stack-(FIFO) Implementation Using Array
+// Queue - (FIFO) Implementation Using Array
 
 // ***Note***
 // Not Good In performance as we are removing 
