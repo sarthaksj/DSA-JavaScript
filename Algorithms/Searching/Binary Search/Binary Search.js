@@ -73,3 +73,14 @@ search2DArray(
     ],
     37
 );
+
+
+/**
+ * Fully Sorted Matrix
+ */
+const binarySearch2D = function (matrix, target) {
+    if (matrix.length === 0) return;
+    let [rows, cols] = [matrix.length, matrix[0].length];
+
+    let middle = Math.floor((rowStart + rowEnd) / 2);
+}

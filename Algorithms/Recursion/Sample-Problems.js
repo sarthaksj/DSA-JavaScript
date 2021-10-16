@@ -52,3 +52,28 @@ const countZeroes = (num, count = 0) => {
     return countZeroes(Math.floor(num / 10), count);
 };
 countZeroes(30204);
+
+
+// Check The Array is Sorted or not.
+const isSorted = (arr, i = 0) => {
+    if (i === arr.length - 1) return true;
+    if (arr[i] < arr[i + 1]) {
+        return isSorted(arr, ++i);
+    } else {
+        return false;
+    }
+};
+
+isSorted([2, 5, 7, 10]);
+
+//Linear Search using Recursion.
+const linearSearch = (arr, target, i = 0) => {
+    if (i === arr.length) return -1;
+    if (arr[i] === target) {
+        return i;
+    } else {
+        return linearSearch(arr, target, ++i);
+    }
+};
+
+linearSearch([3, 2, 1, 4, 5, 6, 7, 8, 9, 11, 12, 35], 88);
